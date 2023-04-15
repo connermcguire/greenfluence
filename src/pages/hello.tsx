@@ -19,6 +19,10 @@ const Hello = () => {
         // set data to state
         setData(data);
         setLoaded(true);
+      })
+      .catch((err) => {
+        console.log(err);
+        setLoaded(false);
       });
   }, []);
 
